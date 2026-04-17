@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contan">
+        <div class="top-div">
+            <div>
+                <img id="icon-img" src="./assets/images/icon.png" alt="icon">
+            </div>
+
+            <div class="nav">
+                <p>OUR COFFEE</p>
+                <p>WHOLESALE</p>
+                <p>ABOUT US</p>
+                <p>CONTACT</p>
+            </div>
+
+            <div class="buttons">
+                <button class="lang-button">English</button>
+                <button class="lang-button">AED</button>
+                <button><img src="./assets/images/search-outline-svgrepo-com.svg" alt=""></button>
+                <div class="buttons-basket-section">
+                <button id="basket-btn"><img src="./assets/images/basket-svgrepo-com.svg" alt=""></button>
+                <sup id="item-counter-in-basket">0</sup>
+                </div>
+                <button><img src="./assets/images/person-svgrepo-com.svg" alt=""></button>
+            </div>
+        </div>
+         <div class="container py-4">
+      
+
+
+            <div id="products" class="owl-carousel owl-theme">
+      
+
+      </div>
+    </div>
+
+
+       
+
+        </div>
+
+        <div id="product-info-modal" class="product-info-modal" aria-hidden="true">
+            <div class="product-info-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+                <button id="modal-close-btn" class="modal-close-btn" type="button">Close</button>
+
+                <div class="modal-layout">
+                    <div class="modal-image-wrap">
+                        <img id="modal-product-image" style="height: max-content;" src="" alt="Product image">
+                    </div>
+
+                    <div class="modal-details">
+                        <p id="modal-product-category" class="modal-category"></p>
+                        <h2 id="modal-product-title"></h2>
+                        <p id="modal-product-description"></p>
+                        <p class="modal-price-line">Price: <span id="modal-product-price"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</html>

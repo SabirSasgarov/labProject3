@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8fafc;
+}
+
+#icon-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.top-div{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    min-height: 80px;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.lang-button{
+    width: 60px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-right: 45px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+
+.card button{
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(107, 107, 240);
+}
+
+#basket-btn{
+    padding:0;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+#cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 420px;
+}
+
+.coffee-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-price{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: end;
+}
+
+#item-counter-in-basket{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-basket-section{
+    display: flex;    
+}
+
+
+
+#products .card {
+  width: 18rem;
+    height: auto;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(30, 41, 59, 0.08);
+    overflow: visible;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+#products .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(30, 41, 59, 0.14);
+}
+
+#products .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8fafc;
+  padding: 1rem;
+}
+
+#products .card-title {
+  min-height: 48px;
+}
+
+#products .card-text.description {
+  min-height: 72px;
+  margin-bottom: 1rem;
+}
+
+#products .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#products .card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+}
+
+#products .card-actions button {
+    flex: 1;
+    border: 1px solid #0f172a;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+#products .card-actions .order-btn {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+#products .price {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+#products .product-item {
+    display: flex;
+    padding: 8px;
+}
+
+#products .product-item .card {
+    width: 100%;
+}
+
+#products:not(.owl-loaded) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+#products.owl-carousel .owl-item {
+  display: flex;
+}
+
+#products.owl-carousel .owl-nav {
+    margin-top: 14px;
+}
+
+#products.owl-carousel .owl-nav button.owl-prev,
+#products.owl-carousel .owl-nav button.owl-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #0f172a;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-size: 28px;
+    line-height: 1;
+}
+
+#products.owl-carousel .owl-nav button.owl-prev:hover,
+#products.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+#products.owl-carousel .owl-nav button.owl-prev span,
+#products.owl-carousel .owl-nav button.owl-next span {
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.product-info-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.56);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.product-info-modal.open {
+    display: flex;
+}
+
+.product-info-dialog {
+    width: min(920px, 100%);
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #dbe3ee;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
+    padding: 18px;
+}
+
+.modal-close-btn {
+    display: block;
+    margin-left: auto;
+    border: 1px solid #0f172a;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+.modal-layout {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 20px;
+}
+
+.modal-image-wrap {
+    min-height: 300px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+#modal-product-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.modal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #475569;
+    letter-spacing: 0.08em;
+}
+
+#modal-product-title {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+}
+
+#modal-product-description {
+    color: #334155;
+    line-height: 1.55;
+}
+
+.modal-price-line {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    #products.owl-carousel .owl-nav button.owl-prev,
+    #products.owl-carousel .owl-nav button.owl-next {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    #icon-img{
+        margin-left: 0;
+    }
+
+    .buttons{
+        margin-right: 0;
+        gap: 8px;
+    }
+
+    .top-div{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 14px;
+    }
+
+    .nav{
+        gap: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav p{
+        font-size: 12px;
+    }
+
+    .lang-button{
+        width: 56px;
+        height: 26px;
+    }
+
+    #products{
+        gap: 16px;
+    }
+
+    #products .card {
+        width: min(100%, 20rem);
+    }
+
+    #products .card-img-top {
+        height: 200px;
+    }
+
+    .product-info-dialog {
+        padding: 14px;
+    }
+
+    .modal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    #modal-product-title {
+        font-size: 22px;
+    }
+}
+
