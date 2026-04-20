@@ -148,6 +148,7 @@ jQuery(function () {
 
   jQuery("#products").on("click", ".order-btn", function () {
     const index = jQuery(this).closest(".product-item").data("product-index");
+    alert("Product added to basket!");
     const product = productsCache[index];
     if (product) {
       addToBasket(product);

@@ -81,6 +81,7 @@ clearListButton.addEventListener("click", function () {
   let listContainer = document.getElementById("list-container");
   listContainer.innerHTML = "";
   emptyList();
+  checkBasket();
 });
 
 let checkoutButton = document.getElementById("checkout-btn");
@@ -104,6 +105,7 @@ checkoutButton.addEventListener("click", function () {
   let listContainer = document.getElementById("list-container");
   listContainer.innerHTML = "";
   emptyList();
+  checkBasket();
 });
 
 function totalCost() {
@@ -119,3 +121,12 @@ function totalCost() {
 
 let totalCostElement = document.getElementById("total-cost");
 totalCostElement.innerText = `${totalCost()}`;
+
+checkBasket();
+function checkBasket() {
+  let data = JSON.parse(localStorage.getItem("myArray")) || [];
+  if (data.length === 0) {
+    clearListButton.style.display = "none";
+    checkoutButton.style.display = "none";
+  };
+}
